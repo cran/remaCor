@@ -1,4 +1,13 @@
 
+# remaCor 0.0.11
+ - Oct 11, 2022
+ - Handle errors when covariance matrix is not invertable
+ - center title for `plotForest()`
+
+# remaCor 0.0.10
+ - Sept 7, 2022
+ - Improve GitHub page
+
 # remaCor 0.0.9
  - Sept 6, 2022
  - Improve documentation
