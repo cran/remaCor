@@ -1,3 +1,19 @@
+# remaCor 0.0.16
+ - June 21, 2023
+ - Pass CRAN checks on Windows
+
+# remaCor 0.0.15
+ - June 17, 2023
+ - in `hotelling()` check that `n-p >= 1` 
+
+# remaCor 0.0.14
+ - June 15, 2023
+ - Fix null distribution used in `LS.empirical()`
+ - add `hotelling()` test
+
+# remaCor 0.0.12
+ - June 3, 2023
+ - Add `LS.empirical()` to handle fixed effects meta-analysis of regression coefficients estimated from finite sample.
 
 # remaCor 0.0.11
  - Oct 11, 2022
