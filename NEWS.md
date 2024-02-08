@@ -1,3 +1,12 @@
+# remaCor 0.0.18
+ - Feb 8, 2024
+ - fix compiler issue on Windows
+  - https://github.com/GabrielHoffman/remaCor/pull/1
+
+# remaCor 0.0.17
+ - June 27, 2023
+ - handle case when sample from Wishart matrix is computationally singular
+
 # remaCor 0.0.16
  - June 21, 2023
  - Pass CRAN checks on Windows

@@ -1,0 +1,57 @@
+
+June 3, 2023
+	LS_empirical considers that beta ~ Student t
+		but that se is fixed. 
+		Can I draw sampling varinces from scaled chisq
+
+	I currently use standard error, should I use shrunkedn standard error from eBayes??? backtransformign from the t shrinking?	
+
+
+	Given V, sample from Wishart then draw beta from this
+
+
+
+Oct 11, 2022
+# TODO in mvTest 
+# return number of features
+# return stat1 and stat2 for RE2C
+# return NA for stat1 if 1 features
+# return per-component p-value
+
+
+p <- 1
+q <- 5
+n <- 100000 # number of samples
+# parameter specification
+beta <- matrix(rnorm(p*q),p,q) # single argument
+
+V = diag(3, q)
+
+nu <- 10
+
+# simulate n draws
+res = rMNIW(n, Lambda = beta, Psi = Psi, nu = nu)
+
+
+nu = rep(1e8, 5)
+
+stats1 = get_stat_samples(V, nu, seed=1)
+stats2 = get_stat_samples2(V, nu)
+
+source("/Users/gabrielhoffman/workspace/repos/remaCor/R/LS_empirical_pvalue.R")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
